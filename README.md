@@ -2,11 +2,11 @@
 Symbolic regression and Monod dynamics to study bacterial growth
 
 ## Data treatment
-Use file **2025SRMO_pars.ipynb** to generate random parameters for simulated data.
-Use file **2025SRMO_data.ipynb** to clean raw experimental data and to generate simulated data.
+Use file **2026SRMO_pars.ipynb** to generate random parameters for simulated data.
+Use file **2026SRMO_data.ipynb** to clean raw experimental data and to generate simulated data.
 
 ## Random Forest
-Use file **2025SRMO_rfml.ipynb** to run Random Forest analyses on cleaned data and generate manuscript Fig.2.
+Use file **2026SRMO_rfml.ipynb** to run Random Forest analyses on cleaned data and generate manuscript Fig.2.
 
 ## Symbolic regression
 File **run_pySR.py** represents our final PySR model, complete with custom loss and specified expression template for prediction of per-capita growth rate using cumulative population size $N_c$ (as $F = e^{-N_c}$), resource concentration $C$ and time $t$ (as $U = e^{-t})$.
@@ -22,4 +22,4 @@ We use one species' data per run. The runs used 32 computing cluster cores with 
 
 See the script for further details.
 
-Use file **2025SRMO_sreq.ipynb** to analyse symbolic regression results and generate manuscript Fig.3.
+Use file **2026SRMO_sreq.ipynb** to analyse symbolic regression results and generate manuscript Fig.3, 4, 5.
