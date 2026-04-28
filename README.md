@@ -9,7 +9,14 @@ Use file **2026SRMO_data.ipynb** to clean raw experimental data and to generate 
 Use file **2026SRMO_rfml.ipynb** to run Random Forest analyses on cleaned data and generate manuscript Fig.2.
 
 ## Symbolic regression
-File **run_pySR.py** represents our final PySR model, complete with custom loss and specified expression template for prediction of per-capita growth rate using cumulative population size $N_c$ (as $F = e^{-N_c}$), resource concentration $C$ and time $t$ (as $U = e^{-t})$.
+Python script files in directories ```naive_SR```, ```main_SR``` and ```grid_SR``` represent the various ways we ran the symbolic regressors. 
+
+Naive SR refers to the SR we used to evaluate feature sets in conjuction with the Random Forest analyses (naive SR scripts include the 50/50 train/test data split). 
+
+Main SR refers to the SR runs where we used function templates (including no-template) to predict per-capita growth rate using cumulative population size $N_c$ (as $F = e^{-N_c}$), resource concentration $C$ and time $t$ (as $U = e^{-t})$. 
+
+Grid SR refers to SR on data with two resources of varying concentrations $C_1$ and $C_2$.
+
 
 ### Instructions:
 
